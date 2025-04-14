@@ -12,21 +12,27 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
-	"icon": "assets/temp_mod/icon.png",
+	"icon": "assets/crystalMod/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"pingoo04.temp_mod.Main"
+			"pingoo04.crystalMod.Main"
 		],
 		"fabric-datagen": [
-			"pingoo04.temp_mod.DataGen"
+			"pingoo04.crystalMod.DataGen"
 		],
 		"client": [
-			"pingoo04.temp_mod.Client"
+			"pingoo04.crystalMod.Client"
+		],
+		"jade": [
+			"pingoo04.crystalMod.compat.jade.ModJadePlugin"
+		],
+		"rei_client": [
+			"pingoo04.crystalMod.compat.rei.ModREIClientPlugin"
 		]
 	},
 	"mixins": [
-		"temp_mod.mixins.json"
+		"crystalMod.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.13",
