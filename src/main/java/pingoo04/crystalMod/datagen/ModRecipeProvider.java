@@ -3,7 +3,8 @@ package pingoo04.crystalMod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
-import pingoo04.crystalMod.references.Reference;
+
+import static pingoo04.crystalMod.Reference.log;
 
 public class ModRecipeProvider extends FabricRecipeProvider
 {
@@ -13,6 +14,6 @@ public class ModRecipeProvider extends FabricRecipeProvider
 
     @Override
     public void generate(RecipeExporter recipeExporter) {
-        Reference.LOGGER.info(">>> Generating Recipe Data");
+        log("Generating Recipe Data");
     }
 }

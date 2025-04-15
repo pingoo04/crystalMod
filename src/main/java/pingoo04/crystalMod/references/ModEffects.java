@@ -1,6 +1,6 @@
 package pingoo04.crystalMod.references;
 
-import static pingoo04.crystalMod.references.Reference.LOGGER;
+import static pingoo04.crystalMod.Reference.log;
 
 public class ModEffects
 {
@@ -11,6 +11,6 @@ public class ModEffects
 
     public static void register()
     {
-        LOGGER.info(">>> Registering Effects");
+        log("Registering Effects");
     }
 }

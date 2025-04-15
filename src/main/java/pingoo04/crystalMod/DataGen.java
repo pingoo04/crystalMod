@@ -7,13 +7,14 @@ import net.minecraft.registry.RegistryKeys;
 import pingoo04.crystalMod.datagen.*;
 import pingoo04.crystalMod.datagen.world.ModConfiguredFeatures;
 import pingoo04.crystalMod.datagen.world.ModPlacedFeatures;
-import pingoo04.crystalMod.references.Reference;
+
+import static pingoo04.crystalMod.Reference.log;
 
 public class DataGen implements DataGeneratorEntrypoint {
 	@Override
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator)
 	{
-		Reference.LOGGER.info(">>> Generating Data");
+		log("Generating Data");
 
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
@@ -28,7 +29,7 @@ public class DataGen implements DataGeneratorEntrypoint {
 
 	@Override
 	public void buildRegistry(RegistryBuilder registryBuilder) {
-		Reference.LOGGER.info(">>> Registering Data Generation Features");
+		log("Registering Data Generation Features");
 
 		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);

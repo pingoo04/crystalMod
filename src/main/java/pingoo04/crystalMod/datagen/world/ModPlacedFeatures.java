@@ -7,11 +7,11 @@ import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.PlacedFeature;
 import net.minecraft.world.gen.placementmodifier.PlacementModifier;
-import pingoo04.crystalMod.references.Reference;
+import pingoo04.crystalMod.Reference;
 
 import java.util.List;
 
-import static pingoo04.crystalMod.references.Reference.identifier;
+import static pingoo04.crystalMod.Reference.identifier;
 
 public class ModPlacedFeatures
 {

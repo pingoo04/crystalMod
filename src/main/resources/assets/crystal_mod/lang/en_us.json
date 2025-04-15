@@ -1,0 +1,9 @@
+{
+  "crystal_mod.ingredient.group": "Ingredients",
+  "item.crystal_mod.fire_crystal_shard": "Fire Crystal Shard",
+  "item.crystal_mod.water_crystal_shard": "Water Crystal Shard",
+  "item.crystal_mod.earth_crystal_shard": "Earth Crystal Shard",
+  "item.crystal_mod.air_crystal_shard": "Air Crystal Shard",
+  "item.crystal_mod.light_crystal_shard": "Light Crystal Shard",
+  "item.crystal_mod.darkness_crystal_shard": "Darkness Crystal Shard"
+}

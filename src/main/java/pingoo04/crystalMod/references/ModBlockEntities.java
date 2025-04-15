@@ -1,6 +1,7 @@
 package pingoo04.crystalMod.references;
 
-import static pingoo04.crystalMod.references.Reference.LOGGER;
+import static pingoo04.crystalMod.Reference.LOGGER;
+import static pingoo04.crystalMod.Reference.log;
 
 public class ModBlockEntities
 {
@@ -10,6 +11,6 @@ public class ModBlockEntities
 
     public static void register()
     {
-        LOGGER.info(">>> Registering Block Entities");
+        log("Registering Block Entities");
     }
 }

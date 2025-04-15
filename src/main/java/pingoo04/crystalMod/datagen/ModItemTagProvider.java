@@ -4,9 +4,11 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
-import pingoo04.crystalMod.references.Reference;
+
 
 import java.util.concurrent.CompletableFuture;
+
+import static pingoo04.crystalMod.Reference.log;
 
 public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider
 {
@@ -18,7 +20,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
 
-        Reference.LOGGER.info(">>> Generating Item Tag Data");
+        log("Generating Item Tag Data");
 
         getOrCreateTagBuilder(ItemTags.AXES);
         getOrCreateTagBuilder(ItemTags.PICKAXES);

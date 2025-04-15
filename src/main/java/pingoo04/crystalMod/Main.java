@@ -2,10 +2,10 @@ package pingoo04.crystalMod;
 
 import net.fabricmc.api.ModInitializer;
 
-import pingoo04.crystalMod.references.ModWorldGeneration;
+import pingoo04.crystalMod.references.world.ModWorldGeneration;
 import pingoo04.crystalMod.references.*;
 
-import static pingoo04.crystalMod.references.Reference.logBackRGB256;
+import static pingoo04.crystalMod.Reference.logBackRGB256;
 
 public class Main implements ModInitializer {
 

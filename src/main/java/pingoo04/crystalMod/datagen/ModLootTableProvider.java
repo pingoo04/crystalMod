@@ -12,7 +12,9 @@ import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
-import pingoo04.crystalMod.references.Reference;
+
+
+import static pingoo04.crystalMod.Reference.log;
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider
 {
@@ -24,7 +26,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider
     @Override
     public void generate()
     {
-        Reference.LOGGER.info(">>> Generating Loot Table Data");
+        log("Generating Loot Table Data");
     }
 
     private LootTable.Builder customOreDrops(Block drop, Item item, float min, float max)

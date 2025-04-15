@@ -7,9 +7,11 @@ import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
-import pingoo04.crystalMod.references.Reference;
+
 
 import java.util.concurrent.CompletableFuture;
+
+import static pingoo04.crystalMod.Reference.log;
 
 public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider
 {
@@ -20,7 +22,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup)
     {
-        Reference.LOGGER.info(">>> Generating Block Tag Data");
+        log("Generating Block Tag Data");
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE);
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL);
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL);

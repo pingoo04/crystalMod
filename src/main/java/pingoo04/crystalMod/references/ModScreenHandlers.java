@@ -1,6 +1,7 @@
 package pingoo04.crystalMod.references;
 
-import static pingoo04.crystalMod.references.Reference.LOGGER;
+import static pingoo04.crystalMod.Reference.LOGGER;
+import static pingoo04.crystalMod.Reference.log;
 
 public class ModScreenHandlers
 {
@@ -11,6 +12,6 @@ public class ModScreenHandlers
 
     public static void register()
     {
-        LOGGER.info(">>> Registering Screen Handlers");
+        log("Registering Screen Handlers");
     }
 }

@@ -5,8 +5,7 @@ import net.minecraft.recipe.RecipeType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 
-import static pingoo04.crystalMod.references.Reference.LOGGER;
-import static pingoo04.crystalMod.references.Reference.identifier;
+import static pingoo04.crystalMod.Reference.*;
 
 public class ModRecipes
 {
@@ -17,7 +16,7 @@ public class ModRecipes
 
     public static void register()
     {
-        LOGGER.info(">>> Registering Recipes");
+        log("Registering Recipes");
     }
 
     private static void register(String name, RecipeSerializer<?> serializer)

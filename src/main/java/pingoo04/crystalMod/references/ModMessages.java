@@ -8,7 +8,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-import static pingoo04.crystalMod.references.Reference.log;
+import static pingoo04.crystalMod.Reference.log;
 
 public class ModMessages
 {

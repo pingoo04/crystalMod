@@ -11,7 +11,9 @@ base {
 }
 
 repositories {
-	maven { url "https://maven.shedaniel.me" }
+
+	maven { url "https://maven.shedaniel.me/" }
+	maven { url "https://maven.architectury.dev/" }
 	maven {
 		url "https://cursemaven.com"
 		content {
@@ -55,8 +57,8 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	// REI Compatibility Dependency
-	modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:${project.rei_version}"
-	modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-fabric:${project.rei_version}"
+	//modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:${project.rei_version}"
+	//modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-fabric:${project.rei_version}"
 
 	modApi("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_version}") {
 		exclude(group: "net.fabricmc.fabric-api")
@@ -86,7 +88,8 @@ dependencies {
 	include "net.kyrptonaught:customportalapi:${project.kyrptonaught_version}"
 
 	// Needed for Fluid Handling
-	modImplementation include("com.github.drkhodakarami:fluidutils:${project.fluidutils_version}")
+	modImplementation "net.kyrptonaught:customportalapi:${project.kyrptonaught_version}"
+	include "com.github.drkhodakarami:fluidutils:${project.fluidutils_version}"
 
 	// Needed for Custom Player Effects
 	modImplementation "io.github.ladysnake:PlayerAbilityLib:${project.pal_version}"

@@ -9,6 +9,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
+import static pingoo04.crystalMod.Reference.log;
+
 
 public class ModBlocks
 {
@@ -18,7 +20,7 @@ public class ModBlocks
 
     public static void register()
     {
-        Reference.LOGGER.info(">>> Registering Blocks");
+        log("Registering Blocks");
     }
 
     private static Block registerBlock(String name, Block block)

@@ -2,7 +2,7 @@ package pingoo04.crystalMod.references;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 
-import static pingoo04.crystalMod.references.Reference.log;
+import static pingoo04.crystalMod.Reference.log;
 
 public class ModRegistries
 {

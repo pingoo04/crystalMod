@@ -1,5 +1,8 @@
 package pingoo04.crystalMod.references;
 
+
+import static pingoo04.crystalMod.Reference.log;
+
 public class ModModelPredicateProvider {
 
     public ModModelPredicateProvider() {
@@ -8,6 +11,6 @@ public class ModModelPredicateProvider {
 
     public static void register()
     {
-        Reference.LOGGER.info(">>> Registering Model Predicates");
+        log("Registering Model Predicates");
     }
 }

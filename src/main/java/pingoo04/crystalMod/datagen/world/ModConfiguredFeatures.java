@@ -5,7 +5,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.FeatureConfig;
-import pingoo04.crystalMod.references.Reference;
+import pingoo04.crystalMod.Reference;
 
 public class ModConfiguredFeatures
 {

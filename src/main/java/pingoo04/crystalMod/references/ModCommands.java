@@ -1,5 +1,7 @@
 package pingoo04.crystalMod.references;
 
+import static pingoo04.crystalMod.Reference.log;
+
 public class ModCommands
 {
     public ModCommands() {
@@ -8,6 +10,6 @@ public class ModCommands
 
     public static void register()
     {
-        Reference.LOGGER.info(">>> Registering Commands");
+        log("Registering Commands");
     }
 }

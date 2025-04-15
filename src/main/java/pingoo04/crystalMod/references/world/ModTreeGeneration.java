@@ -1,6 +1,6 @@
 package pingoo04.crystalMod.references.world;
 
-import static pingoo04.crystalMod.references.Reference.log;
+import static pingoo04.crystalMod.Reference.log;
 
 public class ModTreeGeneration {
     public ModTreeGeneration()

@@ -4,7 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricDynamicRegistryProvider;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
-import static pingoo04.crystalMod.references.Reference.*;
+import static pingoo04.crystalMod.Reference.*;
 
 import java.util.concurrent.CompletableFuture;
 

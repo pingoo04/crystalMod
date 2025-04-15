@@ -3,9 +3,11 @@ package pingoo04.crystalMod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
-import pingoo04.crystalMod.references.Reference;
+
 
 import java.util.concurrent.CompletableFuture;
+
+import static pingoo04.crystalMod.Reference.log;
 
 public class ModEntityTagProvider extends FabricTagProvider.EntityTypeTagProvider
 {
@@ -16,6 +18,6 @@ public class ModEntityTagProvider extends FabricTagProvider.EntityTypeTagProvide
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        Reference.LOGGER.info(">>> Generating Entity Tag Data");
+        log("Generating Entity Tag Data");
     }
 }
